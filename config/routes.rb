@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  route 'application#hello'
+  resources :microposts
+  resources :users
+  root 'users#index'
 end
